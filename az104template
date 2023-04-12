@@ -1,6 +1,6 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.3",
+    "contentVersion": "1.0.0.4",
     "parameters": {
         "virtualMachines_backendSERVER_name": {
             "defaultValue": "backendSERVER",
@@ -324,7 +324,7 @@
                     },
                     "osDisk": {
                         "osType": "Windows",
-                        "name": "[concat(avriables('backendservername2'), '_OsDisk_1_ef3ab3c577ea4dd5827852baae056008')]",
+                        "name": "[concat(variables('backendservername2'), '_OsDisk_1_ef3ab3c577ea4dd5827852baae056008')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
