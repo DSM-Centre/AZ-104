@@ -306,7 +306,7 @@
             "name": "[variables('backendservername2')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/networkInterfaces', variables('backendserver2NIC))]"
+                "[resourceId('Microsoft.Network/networkInterfaces', variables('backendserver2NIC'))]"
             ],
             "tags": {
                 "BeardSite": "[resourceGroup().location]"
